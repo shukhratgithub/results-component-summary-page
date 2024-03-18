@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Results summary component">
+  <meta name="keywords" content="a result page using html and css and a little bit of JSON">
+  <meta name="author" content="Shukhrat Turdiev">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+
+  <div class="component-wrapper">
+    <!-- Result Box -->
+    <div class="result-box">
+      <h1 class="result-box_heading">
+        Your Result
+      </h1>
+      <div class="result-box__result-circle result-circle">
+        <div class="result-circle__result">75</div>
+        <span class="result-circle_of">of 100</span>
+      </div>
+      <div class="result-box_message">
+        <div class="result-box_message-title">Great</div>
+        <p class="result-box_message-content">
+          Your performance exceed 65% of the people conducting the <br> test here!
+        </p>
+      </div>
+    </div>
+    <!-- Summary Box -->
+    <section class="summary-box">
+      <h2 class="summary-box_heading">Summary</h2>
+      <ul class="summary-box_stats-list stats-list">
+        <li class="stats-list_item stats-list_item--reaction">
+          <img src="/assets/images/icon-reaction.svg" class="stats-list_item-icon" alt="Reaction Icon" width="20" height="20" aria-hidden="true">
+          <span class="stats-list_item-title">Reaction</span>
+          <span class="stats-list_item-result">80</span>
+          <span class="stats-list_item-percentage">%</span>
+          <span class="stats-list_item-max">/ 100</span>
+        </li>
+        <li class="stats-list_item stats-list_item--memory">
+          <img src="/assets/images/icon-memory.svg" class="stats-list_item-icon" alt="Memory Icon" width="20" height="20" aria-hidden="true">
+          <span class="stats-list_item-title">Memory</span>
+          <span class="stats-list_item-result">92</span>
+          <span class="stats-list_item-percentage">%</span>
+          <span class="stats-list_item-max">/ 100</span>
+        </li>
+        <li class="stats-list_item stats-list_item--verbal">
+          <img src="/assets/images/icon-verbal.svg" class="stats-list_item-icon" alt="Verbal Icon" width="20" height="20" aria-hidden="true">
+          <span class="stats-list_item-title">Verbal</span>
+          <span class="stats-list_item-result">61</span>
+          <span class="stats-list_item-percentage">%</span>
+          <span class="stats-list_item-max">/ 100</span>
+        </li>
+        <li class="stats-list_item stats-list_item--visual">
+          <img src="/assets/images/icon-visual.svg" class="stats-list_item-icon" alt="Visual Icon" width="20" height="20" aria-hidden="true">
+          <span class="stats-list_item-title">Visual</span>
+          <span class="stats-list_item-result">73</span>
+          <span class="stats-list_item-percentage">%</span>
+          <span class="stats-list_item-max">/ 100</span>
+        </li>
+      </ul>
+      <a class="button button--block" href="#"><span class="button-text">Continue</span></a>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
