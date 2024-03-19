@@ -210,6 +210,8 @@ img {
 /* Summary Box */
 
 .summary-box {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 40px;
 }
@@ -221,6 +223,7 @@ img {
 }
 
 .summary-box_stats-list {
+    flex-grow: 1;
     margin-bottom: 40px;
 }
 
